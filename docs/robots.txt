@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desktopapplicationsprovider.github.io/threads-desktop/sitemap.xml
+
