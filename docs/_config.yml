@@ -4,8 +4,6 @@
 
 title: "ChatGPT Desktop"
 description: "Official website for ChatGPT Desktop — a desktop client for ChatGPT."
-show_downloads: true
-download_url: "https://github.com/DesktopApplicationsProvider/chatgpt-desktop/releases/download/1.0/chatgpt.desktop.install.exe"
 baseurl: "/chatgpt-desktop"                   # Leave blank if publishing at the root
 url: "https://DesktopApplicationsProvider.github.io" # Replace with your GitHub Pages URL
 
