@@ -4,12 +4,8 @@ title: ChatGPT Desktop Home Page |
 permalink: /
 ---
 <style>
-  /* Use Flexbox to put text on left and button on right */
-  #hero-container {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: flex-end; /* This pulls the button toward the bottom line */
-    padding-bottom: 0;
+  /* Use the existing container as a relative anchor */
+  .hero .container {
     position: relative;
   }
 
@@ -24,33 +20,38 @@ permalink: /
     align-items: center;
     gap: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    /* This moves it down precisely into the white section gap */
-    transform: translateY(-115px); 
-    margin-bottom: 0;
+    
+    /* Position it on the far right, vertically centered */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    transform: translateY(-130px); 
   }
 
   .download-button-overlay img {
     width: 20px;
     height: 20px;
   }
+
+  /* Ensure the text doesn't run into the button on medium screens */
+  .hero-heading, .hero-subheading {
+    white-space: nowrap;
+  }
 </style>
 
-<!-- =========================== -->
-<!-- Hero / Intro Section -->
 <section class="hero primary">
-  <div id="hero-container" class="container">
-    
-    <div class="hero-text">
-      <h1 class="hero-heading">ChatGPT Desktop</h1>
-      <p class="hero-subheading">Simple, desktop client for ChatGPT</p>
-    </div>
+  <div class="container">
+    <h1 class="hero-heading">ChatGPT Desktop</h1>
+    <p class="hero-subheading">Simple, desktop client for ChatGPT</p>
 
-    <a href="https://github.com/DesktopApplicationsProvider/chatgpt-desktop/releases/download/1.0/ChatGpt.desktop.install.exe"
+    <a href="https://github.com/DesktopApplicationsProvider/chatgpt-desktop/releases/download/1.0/ChatGPT.desktop.install.exe"
        class="download-button-overlay">
        <img src="{{ site.baseurl }}/assets/images/download.png" alt="Download">
        Download ChatGPT Desktop
     </a>
-    
   </div>
 </section>
 
