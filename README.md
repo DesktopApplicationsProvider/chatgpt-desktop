@@ -4,6 +4,8 @@ ChatGPT for desktop is the same ChatGPT but for Windows as desktop application
 
 ChatGPT windows is an AI chatbot that uses natural language processing to create humanlike conversational dialogue. 
 
+Read more on the [Official ChatGPT Desktop Website.](https://desktopapplicationsprovider.github.io/chatgpt-desktop/).
+
 1.   The language model can 
      - respond to questions and compose various written content
      - it can write articles
